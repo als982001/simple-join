@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="validation.css" />
+    <script src="functions.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="wrapper">
+        <div id="greetings">
+          <h2 class="greeting">Welcome!</h2>
+          <h2 class="greeting">Let’s begin the adventure</h2>
+        </div>
+        <div class="input-field show-field" id="username-field">
+          <h2 class="title">Enter your username</h2>
+          <form class="input-line">
+            <span class="input-icon">👉</span>
+            <input
+              type="text"
+              class="username"
+              placeholder="Username을 입력하세요."
+            />
+            <button id="username-btn" class="submit-btn">Continue</button>
+          </form>
+        </div>
+        <div id="password-field" class="input-field field-hide">
+          <h2 class="title">Enter your Password</h2>
+          <form class="input-line">
+            <span class="input-icon">👉</span>
+            <input
+              type="password"
+              class="password"
+              placeholder="비밀번호를 입력하세요."
+            />
+            <button id="password-btn" class="submit-btn">Continue</button>
+          </form>
+        </div>
+        <div id="password-confirmation-field" class="input-field field-hide">
+          <h2 class="title">Enter your Password again</h2>
+          <form class="input-line">
+            <span class="input-icon">👉</span>
+            <input
+              type="password"
+              class="password-retype"
+              placeholder="비밀번호를 다시 입력하세요."
+            />
+            <button id="password-confirmation-btn" class="submit-btn">
+              Continue
+            </button>
+          </form>
+        </div>
+        <form class="join-field field-hide">
+          <h2 class="title">Let's join us!</h2>
+          <div class="submit-btn join-btn">Join!</div>
+        </form>
+        <p id="wrong-id-msg" class="error-msg msg-hide">
+          ID는 4글자 이상이어야 합니다.
+        </p>
+        <p id="wrong-password-msg" class="error-msg msg-hide">
+          Password는 8글자 이상이어야 합니다.
+        </p>
+        <p id="password-mismatch-msg" class="error-msg msg-hide">
+          Password의 확인이 올바르지 않습니다.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="validation.js"></script>
+</html>
